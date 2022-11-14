@@ -34,10 +34,8 @@ struct ContentView: View {
                     sliderValue = 50.0
                     randomValue = Int.random(in: 1...100)
                 }
-                
             }
             .padding(.top, 30.0)
-            
         }
         .padding()
     }
@@ -46,11 +44,7 @@ struct ContentView: View {
         let difference = abs(randomValue - lround(sliderValue))
         return 100 - difference
     }
-    
 }
-
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

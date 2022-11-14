@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		545947D02922AFF60088B3BC /* DecimalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545947CF2922AFF60088B3BC /* DecimalSlider.swift */; };
 		54EED0872922A561003DF728 /* GameWithSliderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EED0862922A561003DF728 /* GameWithSliderApp.swift */; };
 		54EED0892922A561003DF728 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EED0882922A561003DF728 /* ContentView.swift */; };
 		54EED08B2922A562003DF728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54EED08A2922A562003DF728 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		545947CF2922AFF60088B3BC /* DecimalSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalSlider.swift; sourceTree = "<group>"; };
 		54EED0832922A561003DF728 /* GameWithSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameWithSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54EED0862922A561003DF728 /* GameWithSliderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWithSliderApp.swift; sourceTree = "<group>"; };
 		54EED0882922A561003DF728 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				54EED0862922A561003DF728 /* GameWithSliderApp.swift */,
 				54EED0882922A561003DF728 /* ContentView.swift */,
 				54EED0942922A93E003DF728 /* SliderView.swift */,
+				545947CF2922AFF60088B3BC /* DecimalSlider.swift */,
 				54EED08A2922A562003DF728 /* Assets.xcassets */,
 				54EED08C2922A562003DF728 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545947D02922AFF60088B3BC /* DecimalSlider.swift in Sources */,
 				54EED0952922A93E003DF728 /* SliderView.swift in Sources */,
 				54EED0892922A561003DF728 /* ContentView.swift in Sources */,
 				54EED0872922A561003DF728 /* GameWithSliderApp.swift in Sources */,
