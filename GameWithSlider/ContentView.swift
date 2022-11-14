@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var sliderValue = 50.0
+    @State private var sliderValue: Double = 50
     @State private var alertIsPresented = false
     @State private var randomValue = Int.random(in: 1...100)
     
@@ -17,7 +17,10 @@ struct ContentView: View {
         VStack {
             Text("Подвинуть слайдер как можно ближе к: \(randomValue)")
             
-            SliderView(sliderValue: $sliderValue)
+            SliderView(value: $sliderValue,
+                       alpha: computeScore(),
+                       color: .red,
+                       randomValue: randomValue)
             
             Button("Проверить меня") {
                 alertIsPresented.toggle()
@@ -41,7 +44,7 @@ struct ContentView: View {
     }
     
     private func computeScore() -> Int {
-        let difference = abs(randomValue - lround(sliderValue))
+        let difference = abs(randomValue - lround(Double(sliderValue)))
         return 100 - difference
     }
 }
