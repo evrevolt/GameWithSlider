@@ -17,20 +17,23 @@ struct ContentView: View {
         VStack {
             Text("Подвинуть слайдер как можно ближе к: \(randomValue)")
             
-            
             SliderView(sliderValue: $sliderValue)
-            
             
             Button("Проверить меня") {
                 alertIsPresented.toggle()
             }
             .padding(.top, 30.0)
-            .alert("Ваш результат", isPresented: $alertIsPresented) {
-                Button("OK", role: .cancel) {}
+            .alert(isPresented: $alertIsPresented) {
+                Alert(title: Text("Ваш результат"),
+                message: Text("\(computeScore())"),
+                dismissButton: .cancel())
             }
             
             Button("Начать заново") {
-                
+                withAnimation {
+                    sliderValue = 50.0
+                    randomValue = Int.random(in: 1...100)
+                }
                 
             }
             .padding(.top, 30.0)
@@ -38,6 +41,12 @@ struct ContentView: View {
         }
         .padding()
     }
+    
+    private func computeScore() -> Int {
+        let difference = abs(randomValue - lround(sliderValue))
+        return 100 - difference
+    }
+    
 }
 
 
