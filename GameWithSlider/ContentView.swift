@@ -44,7 +44,7 @@ struct ContentView: View {
     }
     
     private func computeScore() -> Int {
-        let difference = abs(randomValue - lround(Double(sliderValue)))
+        let difference = abs(randomValue - lround(sliderValue))
         return 100 - difference
     }
 }
