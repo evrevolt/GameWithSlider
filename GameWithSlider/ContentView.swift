@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var sliderValue: Double = 50
+    @State private var sliderValue = 50.0
     @State private var alertIsPresented = false
     @State private var randomValue = Int.random(in: 1...100)
     

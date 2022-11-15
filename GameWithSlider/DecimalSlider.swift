@@ -31,7 +31,7 @@ struct DecimalSlider: UIViewRepresentable {
     
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = Float(value)
-        uiView.thumbTintColor = color.withAlphaComponent(CGFloat(alpha / 100))
+        uiView.thumbTintColor = color.withAlphaComponent(CGFloat(alpha) / 100)
     }
     
     func makeCoordinator() -> Coordinator {
